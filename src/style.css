@@ -1,0 +1,101 @@
+.canvas {
+  height: 600px;
+  position: relative;
+}
+
+.btnDelete {
+  position: absolute;
+  background: none;
+  border: none;
+  color: grey;
+  right: 15px;
+  cursor: move;
+}
+
+.input-add-list {
+  border: none;
+  width: 100%;
+  height: inherit;
+}
+
+.input-add-list::placeholder {
+  font-style: italic;
+  color: dimgray;
+}
+
+.icon-refresh {
+  position: absolute;
+  color: grey;
+  transform: rotate(90deg);
+  right: 15px;
+  cursor: pointer;
+}
+
+.card-footer {
+  color: dimgrey;
+  cursor: pointer;
+  text-align: center;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.card {
+  border: dimgrey;
+  background: transparent none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 28rem;
+}
+
+input:focus { outline: none; }
+
+.todo-item {
+  border: none;
+}
+
+.list-group {
+  background-color: transparent;
+}
+
+.todo-task.active .fa-square {
+  display: none;
+  background-color: transparent;
+}
+
+.todo-task.active .todo-item {
+  text-decoration: line-through;
+  background-color: #0d6efd;
+  color: white;
+}
+
+button {
+  min-width: 30px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  font-family: inherit;
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.fa-check {
+  display: none !important;
+  position: absolute;
+}
+
+.todo-task.active .fa-check {
+  display: inline-flex !important;
+  position: absolute;
+  color: goldenrod;
+  top: 15px;
+  left: 8%;
+  z-index: 1000;
+}
